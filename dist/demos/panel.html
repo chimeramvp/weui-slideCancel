@@ -116,7 +116,9 @@
   </div>
   <script src="../js/slideCancel.js"></script>
   <script>
-    var slideItem = new slideCancel();
+    var slideItem = new slideCancel({ok:function(){
+      alert("点击了删除");
+    }});
   </script>
 </body>
 
