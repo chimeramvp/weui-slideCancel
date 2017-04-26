@@ -1,0 +1,10 @@
+
+  .weui-cell__cancel{
+    background: #ff0000;
+    color: #ffffff;
+    position: absolute;
+    height: 100%;
+    right: -68px;
+    padding: 0 1em;
+    top:0;
+  }
