@@ -32,13 +32,14 @@ function slideCancel(selector, options) {
       function move(event) {
         var touch = event.touches[0];
         moveWidth = startX - touch.pageX;
+
         if (moveWidth >= elemWidth) {
           moveWidth = elemWidth;
         }
         render();
       }
       function end(event) {
-        if (moveWidth < options.mixOffsetWdith) {
+        if (moveWidth < options.mixOffsetWdith()) {
           moveWidth = 0;
         }else{
           moveWidth = elemWidth;
